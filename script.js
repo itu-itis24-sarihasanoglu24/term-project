@@ -26,7 +26,7 @@ function initializeGame() {
         card.dataset.letter = letter;
 
         const svgImg = document.createElement('img');
-        svgImg.src = `${letter}.svg`; 
+        svgImg.src = `${letter.toLowerCase()}.svg`;
         svgImg.alt = letter;
 
         card.appendChild(svgImg);
